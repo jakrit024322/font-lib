@@ -1,0 +1,68 @@
+<div class="row mt-3">
+    <div class="col-md-12" style="text-align: right;">
+        <a routerLink="/book/add" class="btn btn-success">Add New Book</a>
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="h1">All Books</div>
+    <input type="text" class="form-control" placeholder="Book Name">
+    <button class="input-group-text btn btn-success">Search</button>
+
+    <div class="col-md-12 mt-2">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Book ID</th>
+                    <th>Name</th>
+                    <th>Authos</th>
+                    <th>Publisher</th>
+                    <th>Price</th>
+                    <th>Day Borrow of student</th>
+                    <th>Day Borrow of teacher</th>
+                    <th>Manage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <tr>
+                <!-- <tr *ngFor = "let book of books; let i = index"> -->
+                    <td>1</td>
+                    <td>1001</td>
+                    <td>Star War</td>
+                    <td>jakrit</td>
+                    <td>NVC</td>
+                    <td>200</td>
+                    <td>7<td>
+                    <td>120</td>
+                    
+                    
+                    <!-- <td>{{ i+1 }}</td>
+                    <td>{{ prd.name }}</td>
+                    <td>{{ prd.price }}</td>
+                    <td>{{ prd.unit_in_stock }}</td> -->
+                    <!-- <td>
+                        <a class="btn btn-primary btn-sm" routerLink="/product/detail/">
+                            Detail
+                        </a>
+                        
+                    </td> -->
+                    <td>
+                        <a class="btn btn-info btn-sm-2" routerLink="/product/edit/">
+                            Edit
+                        </a> &nbsp;
+                        <!-- <a class="btn btn-info btn-sm" routerLink="/product/edit/{{prd._id}}">
+                            Edit
+                        </a> &nbsp; -->
+                        <a class="btn btn-danger btn-sm">
+                            Delete
+                        </a>
+                        <!-- <a class="btn btn-danger btn-sm" (click)="deleteProduct(prd._id)">
+                            Delete
+                        </a> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
